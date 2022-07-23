@@ -1,4 +1,4 @@
-### Jarupula Prem Kumar
+## Jarupula Prem Kumar
 #### Data Scientist | Data Anlayst
 **About Me:**
 Passionate Machine learning and Data scientist professional and data analyst with the ability to apply ML techniques or design algorithms to solve real-world business problems. With ability in deploying effective ML predictive models across different industries to accurately forecast consumer behavior and deliver proven results.
