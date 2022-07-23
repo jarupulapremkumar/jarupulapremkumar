@@ -15,7 +15,7 @@ Passionate Machine learning and Data scientist professional and data analyst wit
   - Java
   - Python
   - SQL
-  - Tableaue
+  - Tableau
   
 **Find Me:**</br>
   - <b> Linkedin :</b> https://www.linkedin.com/in/jarupula-premkumar/
