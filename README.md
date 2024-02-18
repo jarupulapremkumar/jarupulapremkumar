@@ -1,5 +1,5 @@
 # Jarupula Prem Kumar
-## Data Scientist | Data Anlayst
+## Data Engineering | Data Scientist
 **About Me:**
 Experienced Data Engineer and Data Scientist with a proven track record of leveraging cutting-edge technologies to drive innovation and optimize business processes. Proficient in a wide array of Big Data technologies, including Hadoop, Cassandra, Apache Spark, and Kafka, I specialize in designing and implementing robust data pipelines to process large volumes of data from diverse sources. My expertise extends to data analysis and interpretation using tools such as Pandas, NumPy, SciPy, Jupyter Notebook, Matplotlib, Seaborn, Scikit-learn, TensorFlow, and PyTorch.
 
