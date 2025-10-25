@@ -1,10 +1,10 @@
-# **Hi, I'm Jarupula Prem Kumar **
+# Hi, I'm Jarupula Prem Kumar 
 
-### ** Senior Data Engineer | Data Platform Architect**
+### Senior Data Engineer | Data Platform Architect
 
 I specialize in designing, deploying, and optimizing high-performance, multi-cloud data ecosystems built for massive scale and reliability. My focus is translating complex analytical needs (R\&D, Data Science, Product) into robust, cost-efficient, and fully automated data infrastructure.
 
-### ** Key Focus & Quantified Impact**
+### Key Focus & Quantified Impact
 
 My work centers on improving performance and governance across the data lifecycle:
 
@@ -15,7 +15,7 @@ My work centers on improving performance and governance across the data lifecycl
 | **\<5s** | Real-Time Latency | Engineered **MQTT/Kafka** low-latency microservices |
 | **99.9%** | Production Uptime | Maintained fault-tolerant streaming via robust **Observability (Prometheus/Grafana)** |
 
-### **✨ Core Capabilities**
+###  Core Capabilities
 
 * **Real-Time Data Pipelining:** Design and deployment of high-volume, low-latency streaming platforms (Kafka, Spark) to maintain **sub-5s latency** and **99.9% uptime**.  
 * **Architectural Optimization:** Expertise in data platform governance, leading architectural refactoring to secure **70% infrastructure cost savings** and **3x data throughput**.  
@@ -23,7 +23,7 @@ My work centers on improving performance and governance across the data lifecycl
 * **Data Modeling & Governance:** Implementing advanced data ingestion strategies (**CDC, SCD Type-0**) and establishing a **centralized source of truth** for analytical reliability.  
 * **Cross-Functional Leadership:** Spearheading initiatives to integrate enriched data into business dashboards, enabling **Data Science** initiatives, and actively mentoring junior engineers.
 
-### ** Core Technology Stack**
+### Core Technology Stack
 
 I primarily work across the cloud-native, modern data stack:
 
@@ -35,7 +35,7 @@ I primarily work across the cloud-native, modern data stack:
 | **DevOps & MLOps** | Kubernetes, Docker, Argo CD, KEDA, CI/CD |
 | **Languages** | Python (Advanced), SQL (Expert), Core Java |
 
-### ** Let's Connect**
+### Let's Connect
 
 I'm interested in collaborative projects involving real-time pipeline design, cost optimization, and platform reliability. Feel free to connect or check out my work below\!
 
