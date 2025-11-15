@@ -17,19 +17,39 @@ My work centers on improving performance and governance across the data lifecycl
 
 ###  Core Capabilities
 
+#### **Platform Architecture & Scalability**
 - Architected the P360 telemetry platform processing 30B+ EV/ICE events per day with sub-second latency and 99.9% uptime, engineered for 10× horizontal scale.
-- Re-designed EventHub ingestion by moving from direct EventHub→ClickHouse streaming to EventHub Capture→Avro→ADLS with Spark Streaming loaders, reducing ingestion cost and improving stability.
+
+#### **Real-Time Ingestion & Streaming Pipelines**
+- Re-designed EventHub ingestion by moving from direct EventHub→ClickHouse streaming to EventHub Capture→Avro→ADLS with Spark Streaming loaders, reducing ingestion cost and improving stability and schema evolution handling.
 - Built Python-based Kafka→ClickHouse microservices on AKS with schema validation, DLQ routing, checkpointing, and idempotent exactly-once semantics.
 - Implemented schema-aware Kafka ingestion with dynamic schema sync, automated invalid-record routing, and fault-tolerant distributed consumer processing.
+
+#### **Master Data & CDC Frameworks**
 - Delivered enterprise-grade CDC ingestion (Python/Polars) for 20+ SAP/master-data systems using SCD-0 modeling with autonomous schema-drift recovery and real-time freshness.
+
+#### **Batch Processing, Analytics & Data Modeling**
 - Developed distributed Airflow/K8s aggregation pipelines producing trip summaries, charge-cycle analytics, battery-health diagnostics, and fleet KPIs from second-level telemetry.
 - Built production ETL/ELT pipelines with strict data contracts, automated/manual backfills, and multi-team integration for ML, BI, and analytics workloads.
+
+#### **Cloud Infrastructure, DevOps & Automation**
 - Deployed and operated Kafka consumer microservices on AKS using ArgoCD, Helm, and KEDA autoscaling, reducing compute cost by 10%.
+
+#### **Observability, SRE & Reliability Engineering**
 - Established SLO-driven observability with Prometheus/Grafana/Loki, achieving 99.95% SLA, reducing MTTR by 60%, and cutting production incidents by 90%.
+
+#### **Database Engineering & Performance Optimization**
 - Optimized a 20+ TB ClickHouse cluster with MergeTree tuning, partitioning, replication strategies, and materialized views—improving p99 query latency by 60% (sub-2s).
+
+#### **Data Governance, Archival & Compliance**
 - Led archival and governance migration of 20+ TB to ADLS with Unity Catalog RBAC, lineage, metadata, auditing, and retention policies—reducing storage cost by 40%.
+
+#### **ML Feature Engineering Enablement**
 - Built feature stores and reusable feature extraction frameworks (PySpark/Polars) with point-in-time correctness and versioning, reducing ML feature prep effort by 80%.
+
+#### **Technical Leadership & Mentorship**
 - Mentored 5 engineers on distributed systems, ClickHouse, Spark, Kubernetes, and observability; implemented review workflows and onboarding playbooks, cutting pipeline time-to-production from 6 to 3 weeks.
+
 
 ### **Technical Skills**
 
