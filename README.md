@@ -23,6 +23,22 @@ My work centers on improving performance and governance across the data lifecycl
 * **Data Modeling & Governance:** Implementing advanced data ingestion strategies (**CDC, SCD Type-0**) and establishing a **centralized source of truth** for analytical reliability.  
 * **Cross-Functional Leadership:** Spearheading initiatives to integrate enriched data into business dashboards, enabling **Data Science** initiatives, and actively mentoring junior engineers.
 
+- Architected P360 telemetry platform processing 30B+ EV/ICE events/day with sub-500ms p99 latency and 99.9% uptime, built for 10× future scale.  
+- Engineered dual real-time ingestion systems (Kafka→ClickHouse & EventHub→Medallion) delivering 3× throughput and 70% infra cost reduction.  
+- Built schema-aware Kafka pipelines with dynamic schema sync, DLQ routing, idempotent execution, and exactly-once guarantees.  
+- Delivered enterprise CDC framework (Python/Polars) ingesting 20+ SAP/master-data systems with SCD0/2 modeling and autonomous schema-drift recovery.  
+- Developed distributed Airflow/K8s aggregations generating trip, charge, diagnostic, and battery-health models from second-level telemetry.  
+- Created production ETL/ELT pipelines with strict data contracts, backfill orchestration, and cross-team consumption readiness for ML/BI/Analytics.  
+- Owned DevOps for telemetry microservices on AKS using ArgoCD, Helm, and KEDA autoscaling (0–50 workers), cutting compute cost 10%.  
+- Implemented IaC + CI/CD with blue-green deployments reducing deployment time 80% and ensuring zero-downtime releases.  
+- Established SLO-driven observability (Prometheus/Grafana/Loki) achieving 99.95% SLA, 60% MTTR reduction, and 90% incident reduction.  
+- Optimized 20+ TB ClickHouse cluster with MergeTree tuning, partitioning, and materialized views improving p99 query latency by 60% (sub-2s).  
+- Tuned Spark pipelines (AQE, skew mitigation, caching) improving batch processing throughput 50%.  
+- Led 20+ TB archival migration to ADLS with Unity Catalog RBAC, lineage, governance, and retention, reducing storage cost 40%.  
+- Built feature store + feature extraction frameworks in PySpark/Polars reducing ML data prep effort 80%.  
+- Mentored 5 engineers and established engineering standards, halving pipeline time-to-production (6 weeks → 3 weeks).  
+
+
 ### Core Technology Stack
 
 I primarily work across the cloud-native, modern data stack:
