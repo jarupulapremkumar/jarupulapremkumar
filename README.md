@@ -17,39 +17,58 @@ My work centers on improving performance and governance across the data lifecycl
 
 ###  Core Capabilities
 
-* **Real-Time Data Pipelining:** Design and deployment of high-volume, low-latency streaming platforms (Kafka, Spark) to maintain **sub-5s latency** and **99.9% uptime**.  
-* **Architectural Optimization:** Expertise in data platform governance, leading architectural refactoring to secure **70% infrastructure cost savings** and **3x data throughput**.  
-* **DevOps & MLOps:** Hands-on experience with production deployments on **Kubernetes**, leveraging **Argo CD** for CI/CD and **KEDA** for dynamic autoscaling.  
-* **Data Modeling & Governance:** Implementing advanced data ingestion strategies (**CDC, SCD Type-0**) and establishing a **centralized source of truth** for analytical reliability.  
-* **Cross-Functional Leadership:** Spearheading initiatives to integrate enriched data into business dashboards, enabling **Data Science** initiatives, and actively mentoring junior engineers.
+- Architected the P360 telemetry platform processing 30B+ EV/ICE events per day with sub-second latency and 99.9% uptime, engineered for 10× horizontal scale.
+- Re-designed EventHub ingestion by moving from direct EventHub→ClickHouse streaming to EventHub Capture→Avro→ADLS with Spark Streaming loaders, reducing ingestion cost and improving stability.
+- Built Python-based Kafka→ClickHouse microservices on AKS with schema validation, DLQ routing, checkpointing, and idempotent exactly-once semantics.
+- Implemented schema-aware Kafka ingestion with dynamic schema sync, automated invalid-record routing, and fault-tolerant distributed consumer processing.
+- Delivered enterprise-grade CDC ingestion (Python/Polars) for 20+ SAP/master-data systems using SCD-0 modeling with autonomous schema-drift recovery and real-time freshness.
+- Developed distributed Airflow/K8s aggregation pipelines producing trip summaries, charge-cycle analytics, battery-health diagnostics, and fleet KPIs from second-level telemetry.
+- Built production ETL/ELT pipelines with strict data contracts, automated/manual backfills, and multi-team integration for ML, BI, and analytics workloads.
+- Deployed and operated Kafka consumer microservices on AKS using ArgoCD, Helm, and KEDA autoscaling, reducing compute cost by 10%.
+- Established SLO-driven observability with Prometheus/Grafana/Loki, achieving 99.95% SLA, reducing MTTR by 60%, and cutting production incidents by 90%.
+- Optimized a 20+ TB ClickHouse cluster with MergeTree tuning, partitioning, replication strategies, and materialized views—improving p99 query latency by 60% (sub-2s).
+- Led archival and governance migration of 20+ TB to ADLS with Unity Catalog RBAC, lineage, metadata, auditing, and retention policies—reducing storage cost by 40%.
+- Built feature stores and reusable feature extraction frameworks (PySpark/Polars) with point-in-time correctness and versioning, reducing ML feature prep effort by 80%.
+- Mentored 5 engineers on distributed systems, ClickHouse, Spark, Kubernetes, and observability; implemented review workflows and onboarding playbooks, cutting pipeline time-to-production from 6 to 3 weeks.
 
-- Architected P360 telemetry platform processing 30B+ EV/ICE events/day with sub-500ms p99 latency and 99.9% uptime, built for 10× future scale.  
-- Engineered dual real-time ingestion systems (Kafka→ClickHouse & EventHub→Medallion) delivering 3× throughput and 70% infra cost reduction.  
-- Built schema-aware Kafka pipelines with dynamic schema sync, DLQ routing, idempotent execution, and exactly-once guarantees.  
-- Delivered enterprise CDC framework (Python/Polars) ingesting 20+ SAP/master-data systems with SCD0/2 modeling and autonomous schema-drift recovery.  
-- Developed distributed Airflow/K8s aggregations generating trip, charge, diagnostic, and battery-health models from second-level telemetry.  
-- Created production ETL/ELT pipelines with strict data contracts, backfill orchestration, and cross-team consumption readiness for ML/BI/Analytics.  
-- Owned DevOps for telemetry microservices on AKS using ArgoCD, Helm, and KEDA autoscaling (0–50 workers), cutting compute cost 10%.  
-- Implemented IaC + CI/CD with blue-green deployments reducing deployment time 80% and ensuring zero-downtime releases.  
-- Established SLO-driven observability (Prometheus/Grafana/Loki) achieving 99.95% SLA, 60% MTTR reduction, and 90% incident reduction.  
-- Optimized 20+ TB ClickHouse cluster with MergeTree tuning, partitioning, and materialized views improving p99 query latency by 60% (sub-2s).  
-- Tuned Spark pipelines (AQE, skew mitigation, caching) improving batch processing throughput 50%.  
-- Led 20+ TB archival migration to ADLS with Unity Catalog RBAC, lineage, governance, and retention, reducing storage cost 40%.  
-- Built feature store + feature extraction frameworks in PySpark/Polars reducing ML data prep effort 80%.  
-- Mentored 5 engineers and established engineering standards, halving pipeline time-to-production (6 weeks → 3 weeks).  
+### **Technical Skills**
 
+**Data Architecture & Design:**  
+Medallion Architecture (Bronze/Silver/Gold), Data Lakehouse Patterns, Dimensional Modeling (Star/Snowflake), Event-Driven Architecture, Lambda/Kappa Architecture, Data Mesh Principles, Slowly Changing Dimensions (SCD Type-0/1/2), Data Vault Modeling
 
-### Core Technology Stack
+**Real-Time & Streaming:**  
+Apache Kafka, Azure Event Hub, Apache Spark (PySpark, Structured Streaming, SparkSQL), Apache Flink, MQTT, Exactly-Once Semantics, Idempotent Processing, Stream Processing Patterns
 
-I primarily work across the cloud-native, modern data stack:
+**Data Warehousing & Analytics:**  
+ClickHouse, Delta Lake, Databricks, BigQuery, Snowflake, DBT, Incremental Loading, Partition Pruning, Query Optimization
 
-| Category | Skills & Technologies |
-| :---- | :---- |
-| **Big Data & Streaming** | Kafka, EventHub, Spark (PySpark), Polars, MQTT |
-| **Data Warehousing** | ClickHouse, Snowflake, Delta Lake, PostgreSQL, MySQL |
-| **Orchestration & ETL** | Apache Airflow, dbt, CDC, SCD Type-0 |
-| **DevOps & MLOps** | Kubernetes, Docker, Argo CD, KEDA, CI/CD |
-| **Languages** | Python (Advanced), SQL (Expert), Core Java |
+**Pipelines & Orchestration:**  
+Apache Airflow, CDC (Change Data Capture), Incremental Processing, Backfills, Data Quality (Great Expectations), Schema Evolution, Data Lineage, Metadata Management
+
+**Cloud Platforms:**  
+Azure (ADLS Gen2, AKS, Event Hub, DevOps), AWS (S3, Glue, Lambda, EMR), GCP (BigQuery, Dataproc), MinIO, Multi-Cloud Architectures
+
+**Containers & DevOps:**  
+Kubernetes, Docker, Helm, ArgoCD, KEDA, CI/CD Pipelines, Infrastructure as Code (IaC), GitOps, Blue-Green Deployments, Canary Releases
+
+**Programming & Development:**  
+Python (PySpark, Polars, Pandas, FastAPI), Advanced SQL/T-SQL, Shell Scripting (Bash), Core Java, REST APIs
+
+**Data Governance & Quality:**  
+Unity Catalog (RBAC, Lineage Tracking, Audit Logging), Data Contracts, Schema Registry, Avro, Protobuf, Data Cataloging, Metadata Management, Data Quality Frameworks, Compliance & Auditing
+
+**Observability & Reliability:**  
+Prometheus, Grafana, Loki, SLO/SLA Monitoring, MTTR Optimization, Distributed Tracing, Incident Response, Root Cause Analysis, On-Call Engineering, Chaos Engineering
+
+**Databases & Storage:**  
+PostgreSQL, MySQL, Redis, ClickHouse, NoSQL Patterns, Columnar Storage, Time-Series Databases, Data Partitioning Strategies, Indexing Optimization
+
+**Advanced Topics:**  
+ML Feature Engineering, MLOps Pipelines, Feature Stores, Data Mesh Architecture, Vector Databases (ChromaDB), RAG Pipelines, Cost Optimization (FinOps), Capacity Planning, Performance Tuning
+
+**Leadership & Collaboration:**  
+Platform Architecture, System Design, Technical Mentoring (5+ Engineers), Code Reviews, Cross-Functional Collaboration (Product, Analytics, Data Science, BI), Async Communication, Stakeholder Management, Requirements Gathering, Documentation Standards
+
 
 ### Let's Connect
 
